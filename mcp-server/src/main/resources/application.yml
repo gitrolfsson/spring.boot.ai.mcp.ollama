@@ -1,0 +1,7 @@
+server:
+  port: 8082
+
+spring:
+  ai.mcp.server:
+    name: mcp-client
+    version: 0.1

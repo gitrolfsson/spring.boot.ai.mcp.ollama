@@ -1,0 +1,22 @@
+logging.level:
+  se.rolfsson.mcp.client: INFO #DEBUG
+
+ollama:
+  model: qwen3:1.7b
+  #model: llama3.2:1b
+
+spring:
+  application:
+    name: mcp-client
+  main:
+    banner-mode: off
+
+  shell.interactive.enabled: true
+
+  ai.mcp.client:
+    request-timeout: 500s
+    type: SYNC
+    sse:
+      connections:
+        server1:
+          url: http://localhost:8082
